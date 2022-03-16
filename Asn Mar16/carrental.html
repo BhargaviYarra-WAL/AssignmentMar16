@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <style>
+      body {
+        background: lightblue;
+      }
+      form {
+        width: 60%;
+        margin: 50px auto;
+      }
+      input,
+      select {
+        width: 80%;
+        padding: 10px;
+        margin: 10px auto;
+        margin-left: 50px;
+        border-radius: 10px;
+      }
+      h1 {
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+      }
+      .btn1 {
+        width: 10%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        background: green;
+        margin-left: 350px;
+      }
+      .reg1 {
+        margin: 50px auto;
+        border: 2px solid black;
+        background: lightslategray;
+        box-shadow: 10px 10px 10px black;
+      }
+      label {
+        margin-left: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Car Rental Website</h1>
+    <form action="/show" method="post">
+      <div class="reg1">
+        <input type="text" name="name" placeholder="Customer Name" /><br />
+        <input type="email" name="email" placeholder="Customer Email" /><br />
+        <label><b>Select Car Model</b></label>
+        <select name="carmodel">
+          <option value="honda">honda</option>
+          <option value="mercedez">mercedez</option>
+          <option value="benz">benz</option>
+          <option value="maruti">maruti</option>
+        </select>
+        <label><b>Choose Color</b></label>
+        <input type="color" name="color" />
+        <button class="btn1">Add</button>
+      </div>
+    </form>
+  </body>
+</html>
